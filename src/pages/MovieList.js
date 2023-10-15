@@ -5,7 +5,7 @@ export const MovieList = () => {
 
     useEffect(()=>{
         fetchData();
-    })
+    },[]);
 
     const fetchData=async()=>{
         const res = await fetch('https://api.themoviedb.org/3/movie/now_playing?api_key=233483de703793f10c35fd4818a6134a')
@@ -26,7 +26,7 @@ export const MovieList = () => {
                     <h1>{movie.id}</h1>
                     <p>{movie.original_title}</p>
                     <p>{movie.overview}</p>
-                    <img src={movie.poster_path} alt="" />
+                    <img src={`https://api.themoviedb.org/ + ${movie.poster_path}`} alt="movie poster" />
                 </div>
             ))
         }

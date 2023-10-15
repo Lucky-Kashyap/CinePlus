@@ -20,7 +20,7 @@ export const MovieList = () => {
           MovieList
         </div>
 
-        {
+        {/* {
             data.map(movie=>(
                 <div>
                     <h1>{movie.id}</h1>
@@ -29,7 +29,7 @@ export const MovieList = () => {
                     <img src={`https://api.themoviedb.org/ + ${movie.poster_path}`} alt="movie poster" />
                 </div>
             ))
-        }
+        } */}
       </main>
     )
   }

@@ -3,7 +3,7 @@ import { MovieCard } from "../components";
 import useFetch from "../hooks/useFetch";
 import { useTitle } from "../hooks";
 
-export const MovieList = ({ apiPath,title}) => {
+export const MovieList = ({ apiPath, title }) => {
   // const [movies, setMovies] = useState([]);
   const { data: movies } = useFetch(apiPath);
   const pageTitle = useTitle(title);

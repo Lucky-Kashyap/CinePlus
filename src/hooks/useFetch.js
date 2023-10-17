@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const useFetch = (apiPath,queryData="") => {
+const useFetch = (apiPath, queryData = "") => {
   const [data, setData] = useState([]);
   const url = `https://api.themoviedb.org/3/${apiPath}?api_key=${process.env.REACT_APP_API_KEY}&query=${queryData}}`;
 

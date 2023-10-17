@@ -1,2 +1,2 @@
-export {useFetch} from './useFetch';
-export {useTitle} from './useTitle';
+export { useFetch } from "./useFetch";
+export { useTitle } from "./useTitle";

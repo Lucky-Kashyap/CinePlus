@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
+import { MovieCard } from "../components";
 
 export const MovieList = () => {
-  const [data, setData] = useState([]);
+  const [movies, setMovies] = useState([]);
 
   useEffect(() => {
     fetchData();
@@ -13,11 +14,20 @@ export const MovieList = () => {
     );
     const data = await res.json();
 
-    setData(data.results);
+    setMovies(data.results);
   };
   return (
     <main>
-      <div>MovieList</div>
+      <section className="max-w-7xl mx-auto py-7">
+          <div className="flex justify-start flex-wrap">
+            {/* <MovieCard/> */}
+            {
+              movies.map(movie=>(
+                <MovieCard key={movie.id} movie={movie}/>
+              ))
+            }
+          </div>
+      </section>
 
       {/* {
             data.map(movie=>(

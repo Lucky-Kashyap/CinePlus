@@ -2,7 +2,11 @@ import { Link } from "react-router-dom";
 import PageNotFoundImage from "../assets/pagenotfound.png";
 import { Button } from "../components";
 
+
 export const PageNotFound = () => {
+  // useEffect(()=>{
+  //   document.title=`Page Not Found /Cineplus`
+  // });
   return (
     <main>
       <section className="flex flex-col justify-center px-2">

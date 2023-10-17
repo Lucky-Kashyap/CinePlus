@@ -2,9 +2,9 @@ import { useEffect, useState } from "react";
 import { MovieCard } from "../components";
 import useFetch from "../hooks/useFetch";
 
-export const MovieList = () => {
+export const MovieList = ({apiPath}) => {
   // const [movies, setMovies] = useState([]);
-  const {data : movies} = useFetch("https://api.themoviedb.org/3/movie/now_playing?api_key=233483de703793f10c35fd4818a6134a");
+  const {data : movies} = useFetch(apiPath);
   // const {data:movies} = useFetch("https://api.themoviedb.org/3/movie/now_playing?api_key=233483de703793f10c35fd4818a6134a")
 
   // useEffect(() => {

@@ -1,5 +1,5 @@
 import { useSearchParams } from "react-router-dom";
-import useFetch from "../hooks/useFetch";
+import {useFetch} from "../hooks";
 import { MovieCard } from "../components";
 import { useTitle } from "../hooks";
 

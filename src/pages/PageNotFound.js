@@ -4,6 +4,7 @@ import { Button } from "../components";
 import { useTitle } from "../hooks";
 
 export const PageNotFound = ({title}) => {
+  //eslint-disable-next-line
   const pageTitle = useTitle(title);
   // useEffect(()=>{
   //   document.title=`Page Not Found /Cineplus`

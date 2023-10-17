@@ -5,6 +5,7 @@ import { useTitle } from "../hooks";
 export const MovieList = ({ apiPath, title }) => {
   // const [movies, setMovies] = useState([]);
   const { data: movies } = useFetch(apiPath);
+  //eslint-disable-next-line
   const pageTitle = useTitle(title);
   // const {data:movies} = useFetch("https://api.themoviedb.org/3/movie/now_playing?api_key=233483de703793f10c35fd4818a6134a")
 

@@ -7,6 +7,7 @@ export const Search = ({ apiPath }) => {
   const [searchParams] = useSearchParams();
   // console.log(searchParams);
   const queryData = searchParams.get("q");
+  //eslint-disable-next-line
   const pageTitle = useTitle(`Search Result For ${queryData}`);
   // console.log(queryData);
 

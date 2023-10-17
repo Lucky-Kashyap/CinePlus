@@ -9,6 +9,7 @@ export const MovieDetail = () => {
   // console.log(params.id);
 
   const [movie, setMovie] = useState({});
+  //eslint-disable-next-line
   const pageTitle = useTitle(movie?.title);
 
   const image = movie?.poster_path

@@ -15,7 +15,7 @@ export const Footer = () => {
           <a
             href="https://www.themoviedb.org/"
             target="_blank"
-            className="mr-4 hover:underline md:mr-6 "
+            className="mr-4 hover:underline md:mr-6 " rel="noreferrer"
           >
             TMDB
           </a>
@@ -24,7 +24,7 @@ export const Footer = () => {
           <a
             href="https://developer.themoviedb.org/docs"
             target="_blank"
-            className="mr-4 hover:underline md:mr-6"
+            className="mr-4 hover:underline md:mr-6" rel="noreferrer"
           >
             API Reference
           </a>
@@ -33,7 +33,7 @@ export const Footer = () => {
           <a
             href="https://www.linkedin.com/in/divyanshu-kashyap-b09138171/"
             target="_blank"
-            className="mr-4 hover:underline md:mr-6"
+            className="mr-4 hover:underline md:mr-6" rel="noreferrer"
           >
             Linkden
           </a>
@@ -42,7 +42,7 @@ export const Footer = () => {
           <a
             href="https://github.com/Lucky-Kashyap/"
             target="_blank"
-            className="hover:underline"
+            className="hover:underline" rel="noreferrer"
           >
             Github
           </a>

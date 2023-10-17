@@ -15,6 +15,8 @@ export const MovieDetail = () => {
     ? `https://image.tmdb.org/t/p/w500/${movie.poster_path}`
     : Backup;
 
+    
+
   useEffect(() => {
     fetchMovie();
   }, []);

@@ -19,7 +19,7 @@ export const MovieDetail = () => {
 
   useEffect(() => {
     fetchMovie();
-  }, []);
+  }, [params.id]);
 
   async function fetchMovie() {
     const response = await fetch(

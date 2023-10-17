@@ -2,9 +2,9 @@ import { useEffect, useState } from "react";
 import { MovieCard } from "../components";
 import useFetch from "../hooks/useFetch";
 
-export const MovieList = ({apiPath}) => {
+export const MovieList = ({ apiPath }) => {
   // const [movies, setMovies] = useState([]);
-  const {data : movies} = useFetch(apiPath);
+  const { data: movies } = useFetch(apiPath);
   // const {data:movies} = useFetch("https://api.themoviedb.org/3/movie/now_playing?api_key=233483de703793f10c35fd4818a6134a")
 
   // useEffect(() => {
@@ -22,14 +22,12 @@ export const MovieList = ({apiPath}) => {
   return (
     <main>
       <section className="max-w-7xl mx-auto py-7">
-          <div className="flex justify-start flex-wrap other:justify-evenly">
-            {/* <MovieCard/> */}
-            {
-              movies.map(movie=>(
-                <MovieCard key={movie.id} movie={movie}/>
-              ))
-            }
-          </div>
+        <div className="flex justify-start flex-wrap other:justify-evenly">
+          {/* <MovieCard/> */}
+          {movies?.map((movie) => (
+            <MovieCard key={movie.id} movie={movie} />
+          ))}
+        </div>
       </section>
 
       {/* {
